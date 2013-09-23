@@ -28,7 +28,7 @@ class InventoriesController < ApplicationController
 
     respond_to do |format|
       if @inventory.save
-        format.html { redirect_to @inventory, notice: 'Inventory was successfully created.' }
+        format.html { redirect_to @inventory, notice: 'Submitted successfully' }
         format.json { render action: 'show', status: :created, location: @inventory }
       else
         format.html { render action: 'new' }
